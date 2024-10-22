@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  background: #fff;
+  color: #1e1c2a;
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+}
+
+.box{
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 25px 25px;
+  border-radius: 20px;
+  box-shadow: 0 0 128px 0 rgba(0,0,0,0.1),
+              0 32px 64px -48px rgba(0,0,0,0.5);
+  position: relative;
+  bottom: 120px;
+}
+
+.form-box{
+  width: 450px;
+  margin: 0px 10px;
+  position: relative;
+  top: 30px;
+}
+
+.form-box header{
+  font-size: 25px;
+  font-weight: 600;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e6e6e6;
+  margin-bottom: 10px;
+  color: #1e1c2a;
+}
+
+.form-box form .field{
+  display: flex;
+  margin-bottom: 10px;
+  flex-direction: column;
+}
+
+.form-box form .input input{
+  height: 40px;
+  width: 100%;
+  font-size: 16px;
+  padding: 0 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+  background: #fff;
+  color: #1e1c2a;
+}
+
+.btn{
+  height: 35px;
+  background: #ffb411;
+  border: 0;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all .3s;
+  margin-top: 10px;
+  padding: 0px 10px;
+}
+
+.btn:hover{
+  opacity: 0.82;
+}
+
+.submit{
+  width: 100%;
+}
+
+.links{
+  margin-bottom: 15px;
+  color: #1e1c2a;
+}
+
+
+/********* Home *****************/
+
+/* Navigation */
+.nav {
+  background: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  line-height: 60px;
+  z-index: 100;
+  box-shadow: 0 0.5rem 50rem rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-family: "Lilita One", sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+  color: rgb(16, 1, 1);
+}
+
+.logo a {
+  text-decoration: none;
+  color: rgb(16, 1, 1);
+}
+
+.logo a i {
+  margin-right: 8px; 
+  font-size: 1.2rem; 
+}
+
+.logo a:hover {
+  color: #ffb411;
+}
+
+.right-links a {
+  padding: 0 10px;
+  position: relative;
+  left: 450px;
+}
+
+/* Main Content */
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.main-box {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  
+}
+
+.main-box .top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.bottom {
+  width: 100%;
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 840px) {
+  .main-box .top {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+  }
+
+  .top .box {
+      margin: 10px 10px;
+  }
+
+  .bottom {
+      margin-top: 0;
+  }
+}
+
+.message {
+  text-align: center;
+  background: #f9eded;
+  padding: 15px 0px;
+  border: 1px solid #699053;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  color: red;
+}
+
+/* Reservation Form */
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 650px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  position: relative;
+  bottom: 90px;
+  left: 380px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.form .message {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #1e1c2a;
+}
+
+.form label {
+  position: relative;
+}
+
+.form label .input {
+  width: 100%;
+  padding: 10px 10px 20px 10px;
+  outline: 0;
+  border: 1px solid rgba(105, 105, 105, 0.397);
+  border-radius: 10px;
+}
+
+.form label .input + span {
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  color: grey;
+  font-size: 0.9em;
+  cursor: text;
+  transition: 0.3s ease;
+}
+
+.form label .input:placeholder-shown + span {
+  top: 15px;
+  font-size: 0.9em;
+}
+
+.form label .input:focus + span,
+.form label .input:valid + span {
+  top: 0px;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+.form label .input:valid + span {
+  color: #ffb411;
+}
+
+.submit {
+  border: none;
+  outline: none;
+  background-color: #ffb411;;
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+
+.submit:hover {
+  background-color: #ffa400;
+  cursor: pointer;
+}
+  
+  
+  @keyframes pulse {
+    from {
+      transform: scale(0.9);
+      opacity: 1;
+    }
+  
+    to {
+      transform: scale(1.8);
+      opacity: 0;
+    }
+  }

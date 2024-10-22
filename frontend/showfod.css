@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NG+Modern:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Satisfy&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Mulish", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f4f9;
+}
+
+button:hover span {
+    width: 100%;
+}
+
+button:hover {
+    border: none;
+}
+
+
+/* PRODUCTS */
+.product {
+    height: 100vh; 
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.product-category {
+    font-family: "Lilita One", sans-serif;
+    font-size: 2.2rem;
+    font-weight: 200;
+    color: #ffb411;
+    padding: 0 10vw;
+    text-align: center;
+    margin-bottom: 20px; 
+    text-transform: capitalize;
+}
+
+.product-container {
+    width: 96%;
+    height: 70%; 
+    position: relative;
+    right: 70px;
+    padding: 0 10vw;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 20px; 
+    align-items: center; 
+}
+
+.product-container::-webkit-scrollbar {
+    display: none;
+}
+
+.product-card {
+    flex: 0 0 auto;
+    width: 300px; 
+    height: 400px; 
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product-image {
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    height: 60%; 
+    overflow: hidden;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-info {
+    width: 100%;
+    height: 40%; 
+    padding: 10px;
+    text-align: center;
+}
+
+.product-info h2 {
+  font-family: "Playwrite NG Modern", cursive;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.product-info h3{
+  font-family: "Playwrite NG Modern", cursive;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.product-short-description {
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    opacity: 0.5;
+    text-transform: capitalize;
+    margin: 5px 0;
+}
+
+.price {
+ font-family: "Playwrite NG Modern", cursive;
+  font-optical-sizing: auto;
+  font-weight: 360;
+  font-style: normal;
+}
+
+.pre-btn,
+.nxt-btn {
+    border: none;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    z-index: 8;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.pre-btn {
+    left: 20px;
+}
+
+.nxt-btn {
+    right: 20px;
+}
+
+.pre-btn:hover,
+.nxt-btn:hover {
+    background-color: #eaa510;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.pre-btn img,
+.nxt-btn img {
+    opacity: 0.8;
+    width: 20px;
+    height: 20px;
+}
+
+.pre-btn:hover img,
+.nxt-btn:hover img {
+    opacity: 1;
+}
